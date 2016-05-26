@@ -11,9 +11,7 @@
   return  React.createClass({
     render: function () {
       return(
-        <div>
-          test
-        </div>
+      <div> test </div>
       )
     }
   })
