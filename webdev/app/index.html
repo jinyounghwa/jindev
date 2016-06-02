@@ -5,22 +5,21 @@
 <meta charset="utf-8" / />
 <meta name = "discription" content="test" />
 <link rel = "stylesheet" type="text/css" href="styles/main.css" />
-<link rel=”stylesheet” href=”dist/spectre.min.css” />
 </head>
 <body>
 <div id = "app">
 
 </div>
-<div id = "loginpage">
 
-</div>
 <script src="vendor/require.js"></script>
   <script src="js/require_config_dev.js"></script>
   <script type = "text/javascript">
   require([
     "react",
     "reactDom",
-    "jsx!components/App"
+    "jsx!components/App",
+    "jsx!components/views/Loginpage"
+
   ], function (React, ReactDom, App){
     ReactDom.render(
       React.createElement(App,null),
@@ -28,5 +27,7 @@
     );
   });
   </script>
+
+
 </body>
 </html>
