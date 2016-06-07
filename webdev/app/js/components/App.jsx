@@ -2,7 +2,7 @@
   if (typeof define === 'function' && define.amd){
     define([
       "react",
-      "jsx!components/views/loginpage"
+      "jsx!components/views/Loginpage"
     ],factory)
   }else{
     root.App = factory(root.React);
