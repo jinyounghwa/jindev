@@ -4,9 +4,9 @@
       "react"
     ],factory)
   }else{
-    root.App = factory(root.React);
+    root.loginpage = factory(root.React);
   }
-})(this, function (React){
+})(this, function (React,Loginpage){
 
   return  React.createClass({
     render: function () {
