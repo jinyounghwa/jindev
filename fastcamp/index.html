@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>Javascript 변수와 문서 객체 찾기(변수에 참조)</title>
+  <style>
+    .important {
+      font-weight: bold;
+      font-weight: 900;
+      color: #7045cf;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <h1 id="company" class="brand mase kin">Company Brand</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sed nihil iusto, eveniet molestias consequuntur deleniti eligendi voluptas! Voluptatibus, ratione.</p>
+    <p>Impedit perferendis, fuga, fugit atque eius porro corporis! Quo ab omnis illum molestias quibusdam dignissimos eius error, mollitia magni accusantium.</p>
+    <p>Expedita architecto doloribus sapiente, cupiditate suscipit totam tempora rerum accusantium voluptates eveniet quidem doloremque molestiae magnam corrupti reprehenderit, quaerat, aliquam.</p>
+    <p>Temporibus obcaecati dolore quae similique fugit, nihil consectetur doloribus dignissimos. Harum, atque voluptates libero error inventore alias sapiente aspernatur praesentium.</p>
+  </div>
+
+<script>
+
+
+var company = document.getElementById('company');
+
+var company_original_class_name = company.getAttribute('class');
+company.setAttribute('class', company_original_class_name + ' important');
+
+
+
+</script>
+</body>
+</html>
